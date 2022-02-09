@@ -1,0 +1,50 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.csv-link{
+    text-decoration: none;
+}
+
+#info-table{
+    width: 80%;
+}
+
+.page-head{
+    margin-top: 24px;
+    font-weight: 600;
+    font-size: 32px;
+}
+.sub-head{
+    font-size: 16px;
+}
+.csv-icon{
+    vertical-align: bottom;
+    width: 24px;
+    height: 24px;
+}
+.item-center{
+    text-align: center;
+}
+.item-right{
+    text-align: right; 
+    padding-right: 56px;
+}
+
+.table-head{
+    background-color: darkslategray;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: large;
+    letter-spacing: 2px;
+}
+
+.member-col{
+    text-align: center;
+    width: 35% !important;
+}
+.member-list{
+    text-align: center; 
+    font-weight: 600;
+}

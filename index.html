@@ -1,0 +1,52 @@
+<html>
+    <head>        
+	    <meta charset="utf-8">
+	    <title>Leeches' Ranked War Hit Tally</title>
+      <link rel="shortcut icon" href="./assets/img/leeches-icon.png">
+        <link rel="stylesheet" href="./assets/css/index.css">        
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="assets/js/jquery/jquery-3.6.0.js"></script>
+        <script type="text/javascript" src="assets/js/jquery/jquery-1.7.1.min.js"></script>
+        <link href="./assets/css/css_bootstrap/bootstrap.rtl.min.css" rel="stylesheet">
+        
+    </head>
+
+    <body>
+      <div class="page-head item-center">
+        Ranked War Hit Tally
+      </div>
+      <div class="sub-head item-center">
+        Upload your CLEANED .csv file here.<br>
+        Make sure you erased your faction name and all other info not related to your faction.<br>
+        The top part should contain the texts:<br>
+        "Members", "Level", "Attacks", and "Score"<br>
+        Save your edit as new file.. that's the one you will upload here.<br>
+        <br>
+        Cleaned .csv file :&nbsp;  
+        <a class="csv-link" href="./assets/Ranked War Report [483] - Leeches.csv" download>
+          [ <img class="csv-icon" src="./assets/img/csv-icon.png" alt="csv-icon"> Download Sample ]
+        </a><br>
+        * there are times the downloaded file here is of .xls format. you can still use it here.
+      </div>
+      <center>
+        <form id="myForm">
+          <br>
+          <input name="totalAmount" type="number" id="totalAmount" placeholder="Amount to be Divided" /> 
+          <input type="file" id="csvFile" accept=".csv" /><br><br>  
+             
+          <input class="btn btn-primary" type="submit" value="Submit" />
+        </form>
+        <table id="infoTable" class="table table-hover table-striped"></table>
+      </center>
+      
+      
+       
+
+    </body>
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.71/jquery.csv-0.71.min.js"></script> -->
+    <script src="./assets/js/js_bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/index.js" charset="utf-8"></script>    
+    <script src="./assets/js/jquery/jquery-3.6.0.js"></script>
+</html>
+
