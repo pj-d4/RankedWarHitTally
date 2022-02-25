@@ -129,6 +129,29 @@
 .white-12{
     min-height: 12px;
 }
+.white-24{
+    min-height: 24px;
+}
 .white-32{
     min-height: 32px;
+}
+
+
+.manual-image{
+    max-height: 480px !important;
+    box-shadow: 2px 2px 2px 0px gray, -1px -1px #dddddd;
+    border-radius: 4px;
+}
+.manual-image:hover{
+    box-shadow: 1px 1px 1px 0px gray;
+}
+.step{
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+.end{
+    font-weight: bold;
+    font-size: 22px;
 }
