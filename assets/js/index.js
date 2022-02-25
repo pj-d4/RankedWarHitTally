@@ -141,3 +141,8 @@ function csvToArray(str, delimiter = "\n") {
   // return the array
   return arr;
 }
+
+$(".submit-btn").click(function () {
+  $('.submit-form').toggleClass('submit-hide');
+  $('.refresh-form').toggleClass('refresh-show')
+});

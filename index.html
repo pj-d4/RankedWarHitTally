@@ -8,35 +8,55 @@
         <script type="text/javascript" src="assets/js/jquery/jquery-3.6.0.js"></script>
         <script type="text/javascript" src="assets/js/jquery/jquery-1.7.1.min.js"></script>
         <link href="./assets/css/css_bootstrap/bootstrap.rtl.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
         
     </head>
 
     <body>
+      
       <div class="page-head item-center">
-        Ranked War Hit Tally
+        <hr>
+        <div class="white-12"></div>
+        Ranked War Hit Tally | 
+        <a  href="manual.html" class="btn-link align-baseline" target="_blank">
+          Manual
+        </a>
       </div>
-      <div class="sub-head item-center">
-        Upload your CLEANED .csv file here.<br>
-        Make sure you erased your faction name and all other info not related to your faction.<br>
-        The top part should contain the texts:<br>
-        "Members", "Level", "Attacks", and "Score"<br>
-        Save your edit as new file.. that's the one you will upload here.<br>
-        <br>
-        Cleaned .csv file :&nbsp;  
-        <a class="csv-link" href="./assets/Ranked War Report [483] - Leeches.csv" download>
-          [ <img class="csv-icon" src="./assets/img/csv-icon.png" alt="csv-icon"> Download Sample ]
-        </a><br>
-        * there are times the downloaded file here is of .xls format.<br>
-	      Don't worry, you can still use that here.
-      </div>
+      <div class="white-12"></div>
+      <hr>
+      <div class="white-4"></div>
       <center>
-        <form id="myForm">
-          <br>
-          <input name="totalAmount" type="number" id="totalAmount" placeholder="Amount to be Divided" /> 
-          <input type="file" id="csvFile" accept=".csv" /><br><br>  
-             
-          <input class="btn btn-primary" type="submit" value="Submit" />
-        </form>
+        <div class="submit-form">
+          <div>
+            <a class="btn btn-secondary csv-link" href="./assets/Ranked War Report [483] - Leeches.csv" download>
+            <span class="material-icons align-middle md-18">
+              save_alt
+            </span>
+            Download Sample File
+            </a>
+          </div>
+          <div class="white-4"></div>
+          <hr>
+          <div class="white-12"></div>
+          <form id="myForm">
+            <input class="input-amount" name="totalAmount" type="number" id="totalAmount" placeholder="Amount to be Divided" /> 
+            <input type="file" id="csvFile" accept=".csv" />
+            <div class="white-12"></div>
+            <input class="btn btn-primary submit-btn" type="submit" value="&#10148;&nbsp;Submit" />
+          </form>
+        </div>
+        <div class="refresh-form">
+          <a class="btn btn-success refresh-btn" type="submit" onClick="window.location.reload();">
+            <span class="material-icons align-middle">
+              refresh
+            </span>
+            <span class="align-middle">
+              Refresh
+            </span>
+          </a>
+        </div>
+        <hr>
+        <div class="white-12"></div>
         <table id="infoTable" class="table table-hover table-striped"></table>
       </center>
       
