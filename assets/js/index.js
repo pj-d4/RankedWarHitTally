@@ -189,3 +189,8 @@ scrollToTopButton.onclick = function (e){
   e.preventDefault();
   scrollToTop();
 }
+
+// date
+var today = new Date();
+var date = "Saved On : " + today.toDateString();
+document.getElementById("currentDate").innerHTML = date;

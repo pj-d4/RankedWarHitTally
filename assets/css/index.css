@@ -237,11 +237,17 @@
     cursor: pointer;
 }
 
+.add-print{
+    display: none;
+}
 @media print{
     .no-print{
         display: none !important;
     }
 
+    .add-print{
+        display: block;
+    }
     @page{
         margin: 4px 0px 8px 0px;
     }
