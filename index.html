@@ -9,24 +9,32 @@
         <script type="text/javascript" src="assets/js/jquery/jquery-1.7.1.min.js"></script>
         <link href="./assets/css/css_bootstrap/bootstrap.rtl.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha348-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
         
     </head>
 
     <body>
-      
+        <a class="top-btn hide no-print" href="" id="js-top">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" class="no-print">
+              <path d="M12 6H0l6-6z" />
+          </svg>
+          <span class="screen-reader-text no-print">Back to top</span>
+      </a>
+
       <div class="page-head item-center">
         <hr>
         <div class="white-12"></div>
-        Ranked War Hit Tally | 
-        <a  href="manual.html" class="btn-link align-baseline" target="_blank">
-          Manual
-        </a>
+        Ranked War Hit Tally <span class="no-print">| 
+          <a  href="manual.html" class="btn-link align-baseline" target="_blank">
+            Manual
+          </a>
+        </span>
       </div>
       <div class="white-12"></div>
       <hr>
       <div class="white-4"></div>
       <center>
-        <div class="submit-form">
+        <div class="submit-form no-print">
           <div>
             <a class="btn btn-secondary csv-link" href="./assets/Ranked War Report [483] - Leeches.csv" download>
             <span class="material-icons align-middle md-18">
@@ -45,7 +53,7 @@
             <input class="btn btn-primary submit-btn" type="submit" value="&#10148;&nbsp;Submit" />
           </form>
         </div>
-        <div class="refresh-form">
+        <div class="refresh-form no-print">
           <a class="btn btn-success refresh-btn" type="submit" onClick="window.location.reload();">
             <span class="material-icons align-middle">
               refresh
@@ -54,10 +62,22 @@
               Refresh
             </span>
           </a>
+          <a class="btn btn-primary btn-print" onclick="return printfunction()">
+            <i class="fa fa-print"></i> Print
+          </a>
         </div>
         <hr>
         <div class="white-12"></div>
         <table id="infoTable" class="table table-hover table-striped"></table>
+        
+        <div class="refresh-form no-print">
+          <hr>
+          <a class="btn btn-primary btn-print" onclick="return printfunction()">
+          <i class="fa fa-print"></i> Print
+          </a>
+          <div class="white-24"></div>
+        </div>
+        
       </center>
       
       
